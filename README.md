@@ -1,16 +1,13 @@
-# Reference Implementation of Static Site using NPM Scripts
-Reference implementation for HTML Prototypes using NPM Scripts. This codebase is maintained by students and volunteers of [techatpark](http://www.techatpark.com)
+# Design Systems
+Reference implementation for Open Design Systems. This codebase is maintained by students and volunteers of [techatpark](http://www.techatpark.com). As part of the course Student is expected to complete one esign system each
 
 ### Design Goals
 
 We have below design goals.
 
-1. Use Low level tools as much as possible
-1. Stablilty over cutting edge
-1. Best Practices and Conventions
-1. Build time Speed 
+1. Clean Code vs Completion/Customization
+2. upgraded with Latest version uniformely
 
-We carefuly avoided using image optimization during build time as it is good to do images at design time rather than build time.
 
 ### Setup
 
