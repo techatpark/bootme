@@ -1,6 +1,14 @@
 # Design Systems
 Reference implementation for Open Design Systems. This codebase is maintained by students and volunteers of [techatpark](http://www.techatpark.com). As part of the course Student is expected to complete one esign system each
 
+### Idea
+
+As a rerence implementation this will have latest and greatest of 
+
+1. Tool Chain
+2. Techniques
+3. Implemenation
+
 ### Design Goals
 
 We have below design goals.
