@@ -1,6 +1,10 @@
 {
     "copyFiles": [
         {
+            "from": "CNAME",
+            "to": "dist/CNAME"
+        },
+        {
             "from": "node_modules/bootstrap/dist/js/bootstrap.min.js",
             "to": "dist/js/bootstrap.min.js"
         },{
