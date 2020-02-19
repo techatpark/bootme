@@ -9,7 +9,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "run-s clean copy build-storybook",
+    "build": "run-s clean build-storybook copy",
     "copy": "copy-files-from-to",
     "build-storybook": "build-storybook -o dist",
     "generate-addon-jest-testresults": "jest --config=tests/addon-jest.config.json --json --outputFile=stories/addon-jest.testresults.json",
