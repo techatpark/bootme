@@ -28,5 +28,7 @@ export const Button = () => {
 export const Card = () => 
 '<div class="card" style="width: 18rem;"><img src="..." class="card-img-top" alt="..."> <div class="card-body"><h5 class="card-title">Card title</h5><p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p><a href="#" class="btn btn-primary">Go somewhere</a></div></div>';
 
+export const Dropdown = () => 
+'<div class="dropdown"><button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown button</button><div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div></div>';
 
-
+export const Atag = () => '<a href="#">New link</a>';
