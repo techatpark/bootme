@@ -12,7 +12,7 @@
     "copy": "copy-files-from-to",
     "build-storybook": "build-storybook -o dist",
     "generate-addon-jest-testresults": "jest --config=tests/addon-jest.config.json --json --outputFile=stories/addon-jest.testresults.json",
-    "storybook": "start-storybook -p 9006",
+    "storybook": "start-storybook -s ./src -p 9006",
     "postinstall": "run-s build"
   },
   "devDependencies": {
