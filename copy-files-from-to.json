@@ -1,8 +1,12 @@
 {
-    "copyFiles": [
-        {
-            "from": "CNAME",
-            "to": "dist/CNAME"
-        }
-    ]
+  "copyFiles": [
+    {
+      "from": "src/images/**",
+      "to": "dist/images"
+    },
+    {
+      "from": "CNAME",
+      "to": "dist/CNAME"
+    }
+  ]
 }
