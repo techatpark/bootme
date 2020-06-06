@@ -5,7 +5,5 @@ $font-family-sans-serif: Roboto, sans-serif;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !default;
 $font-family-base: $font-family-sans-serif !default;
 
-// KEY // Color system
-$gray-900: #667079 !default;
-$headings-color: #667079 !default;
-$info: #58736C !default;
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$h1-font-size:                $font-size-base * 5.5 !default;
