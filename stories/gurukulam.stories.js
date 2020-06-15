@@ -1,7 +1,7 @@
 import { withLinks } from '@storybook/addon-links';
 
 export default {
-	title: 'Gurukulam',
+	title: 'Components/Bootstrap/All in All',
 	decorators: [withLinks],
 };
 
