@@ -10,7 +10,7 @@
   "scripts": {
     "serve": "browser-sync start --config browser-sync.js",
     "build": "run-s build-storybook build-assets",
-    "copy": "copy-files-from-to",
+    "copy": "copy-files-from-to --when-file-exists overwrite",
     "sass": "sass src/scss:dist/css",
     "build-assets": "run-s copy sass",
     "build-storybook": "build-storybook -o dist/storybook",

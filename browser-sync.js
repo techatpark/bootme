@@ -17,6 +17,6 @@ module.exports = {
      |--------------------------------------------------------------------------
      | https://github.com/shakyShane/browser-sync/wiki/options#wiki-files
      */
-	files: ['dist/css/*.css'],
+	files: ['dist/css/*.css', 'dist/*.html'],
 	serveStatic: ['dist'],
 };
