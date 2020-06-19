@@ -8,15 +8,16 @@
   "author": "",
   "main": "index.js",
   "scripts": {
+    "serve": "browser-sync start --config browser-sync.js",
     "build": "run-s build-storybook build-assets",
     "copy": "copy-files-from-to",
     "sass": "sass src/scss:dist/css",
     "build-assets": "run-s copy sass",
-    "build-storybook": "build-storybook -o dist",
+    "build-storybook": "build-storybook -o dist/storybook",
     "generate-addon-jest-testresults": "jest --config=tests/addon-jest.config.json --json --outputFile=stories/addon-jest.testresults.json",
     "watch:scss": "onchange \"src/scss\" -- run-s sass",
-    "storybook": "start-storybook -s ./dist -p 9006",
-    "start": "run-p build storybook watch:*",
+    "storybook": "start-storybook -s ./dist/storybook -p 9006",
+    "start": "run-p build storybook serve watch:*",
     "postinstall": "run-s build"
   },
   "devDependencies": {
@@ -38,6 +39,7 @@
     "@storybook/html": "v6.0.0-beta.21",
     "@storybook/source-loader": "v6.0.0-beta.21",
     "bootstrap": "^4.5.0",
+    "browser-sync": "^2.26.7",
     "copy-files-from-to": "^2.1.0",
     "eventemitter3": "^4.0.0",
     "format-json": "^1.0.3",

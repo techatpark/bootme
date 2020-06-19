@@ -5,6 +5,10 @@
       "to": "dist/images"
     },
     {
+      "from": "src/*.html",
+      "to": "dist"
+    },
+    {
       "from": "CNAME",
       "to": "dist/CNAME"
     }
