@@ -17,7 +17,7 @@
     "generate-addon-jest-testresults": "jest --config=tests/addon-jest.config.json --json --outputFile=stories/addon-jest.testresults.json",
     "watch:scss": "onchange \"src/scss\" -- run-s sass",
     "storybook": "start-storybook -s ./dist/storybook -p 9006",
-    "start": "run-p build storybook serve watch:*",
+    "start": "run-p build storybook watch:* serve",
     "postinstall": "run-s build"
   },
   "devDependencies": {

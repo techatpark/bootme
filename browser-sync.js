@@ -12,11 +12,11 @@
  */
 module.exports = {
 	/*
-     |--------------------------------------------------------------------------
-     | Files to watch
-     |--------------------------------------------------------------------------
-     | https://github.com/shakyShane/browser-sync/wiki/options#wiki-files
-     */
-	files: ['dist/css/*.css', 'dist/*.html'],
+      |--------------------------------------------------------------------------
+      | Files to watch
+      |--------------------------------------------------------------------------
+      | https://github.com/shakyShane/browser-sync/wiki/options#wiki-files
+      */
+	files: ['dist/**/*.css', 'dist/js/*.js', 'dist/**/*.html'],
 	serveStatic: ['dist'],
 };
