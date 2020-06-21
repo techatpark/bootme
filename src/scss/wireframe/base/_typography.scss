@@ -1,4 +1,7 @@
-// Typography Variables
-$font-family-sans-serif: American Typewriter, Roboto, sans-serif;
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+
+$font-family-sans-serif: 'Cabin Sketch', Roboto, sans-serif;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !default;
 $font-family-base: $font-family-sans-serif !default;
