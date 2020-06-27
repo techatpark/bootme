@@ -40,7 +40,7 @@
     "@storybook/core-events": "v6.0.0-beta.21",
     "@storybook/html": "v6.0.0-beta.21",
     "@storybook/source-loader": "v6.0.0-beta.21",
-    "bootstrap": "^4.5.0",
+    "bootstrap": "5.0.0-alpha1",
     "browser-sync": "^2.26.7",
     "copy-files-from-to": "^2.1.0",
     "eventemitter3": "^4.0.0",
