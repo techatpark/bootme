@@ -1,344 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<!-- Bootstrap CSS -->
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-			integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
-			crossorigin="anonymous"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-			integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
-			crossorigin="anonymous"
-		/>
-		<style>
-			:target::before {
-				content: '';
-				display: block;
-				margin-top: -80px;
-				height: 80px;
-				width: 1px;
-			}
-		</style>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<title>BootMe - Kickstart Bootstrap Journey</title>
-	</head>
-	<body>
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-			<div class="container-fluid">
-				<a href="#" class="navbar-brand d-flex align-items-center">
-					<svg xmlns="http://www.w3.org/2000/svg" height="32" class="d-block" viewBox="0 0 118 94" role="img">
-						<title>Bootstrap</title>
-						<path
-							fill-rule="evenodd"
-							clip-rule="evenodd"
-							d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
-							fill="currentColor"
-						></path>
-					</svg>
-					<strong>Bootme</strong>
-				</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-toggle="collapse"
-					data-target="#navbarsExampleDefault"
-					aria-controls="navbarsExampleDefault"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+		integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+		integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+	<style>
+		:target::before {
+			content: '';
+			display: block;
+			margin-top: -80px;
+			height: 80px;
+			width: 1px;
+		}
+	</style>
 
-				<div class="collapse navbar-collapse" id="navbarCollapse">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active dropdown">
-							<a
-								class="nav-link dropdown-toggle"
-								href="#"
-								id="navbarDropdown"
-								role="button"
-								data-toggle="dropdown"
-								aria-haspopup="true"
-								aria-expanded="false"
-							>
-								Base
-							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#color-system">Color System</a>
-								<a class="dropdown-item" href="#typography">Typography</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="#grid">Grid</a>
-							</div>
-						</li>
-						<li class="nav-item active dropdown">
-							<a
-								class="nav-link dropdown-toggle"
-								href="#"
-								id="navbarDropdown"
-								role="button"
-								data-toggle="dropdown"
-								aria-haspopup="true"
-								aria-expanded="false"
-							>
-								Components
-							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#alerts">Alerts</a>
-								<a class="dropdown-item" href="#badges">Badges</a>
-								<a class="dropdown-item" href="#breadcrumbs">Breadcrumbs</a>
-								<a class="dropdown-item" href="#buttons">Buttons</a>
-								<a class="dropdown-item" href="#cards">Cards</a>
-								<a class="dropdown-item" href="#carousel">Carousel</a>
-								<a class="dropdown-item" href="#close">Close</a>
-								<a class="dropdown-item" href="#code">Code</a>
-								<a class="dropdown-item" href="#dropdown">Drop Down</a>
-								<a class="dropdown-item" href="#figures">Figures</a>
-								<a class="dropdown-item" href="#forms">Forms</a>
-								<a class="dropdown-item" href="#image-thumbnails">Image Thumbnail</a>
-								<a class="dropdown-item" href="#jumbotron">Jumbotron</a>
-								<a class="dropdown-item" href="#list-group">List Group</a>
-								<a class="dropdown-item" href="#modals">Modals</a>
-								<a class="dropdown-item" href="#navs">Navs</a>
-								<a class="dropdown-item" href="#navbar">Navbar</a>
-								<a class="dropdown-item" href="#pagination">Pagination</a>
-								<a class="dropdown-item" href="#popovers">PopOvers</a>
-								<a class="dropdown-item" href="#progress-bars">Progress Bars</a>
-								<a class="dropdown-item" href="#tables">Tables</a>
-								<a class="dropdown-item" href="#tooltip">Tool Tip</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="#">Something else here</a>
-							</div>
-						</li>
-					</ul>
-					<form class="d-flex">
-						<input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search" />
-					</form>
+	<title>BootMe - Kickstart Bootstrap Journey</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<div class="container-fluid">
+			<a href="#" class="navbar-brand d-flex align-items-center">
+				<svg xmlns="http://www.w3.org/2000/svg" height="32" class="d-block" viewBox="0 0 118 94" role="img">
+					<title>Bootstrap</title>
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+						fill="currentColor"></path>
+				</svg>
+				<strong>Bootme</strong>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+				aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Base
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#color-system">Color System</a>
+							<a class="dropdown-item" href="#typography">Typography</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#grid">Grid</a>
+						</div>
+					</li>
+					<li class="nav-item active dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Components
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#alerts">Alerts</a>
+							<a class="dropdown-item" href="#badges">Badges</a>
+							<a class="dropdown-item" href="#breadcrumbs">Breadcrumbs</a>
+							<a class="dropdown-item" href="#buttons">Buttons</a>
+							<a class="dropdown-item" href="#cards">Cards</a>
+							<a class="dropdown-item" href="#carousel">Carousel</a>
+							<a class="dropdown-item" href="#close">Close</a>
+							<a class="dropdown-item" href="#code">Code</a>
+							<a class="dropdown-item" href="#dropdown">Drop Down</a>
+							<a class="dropdown-item" href="#figures">Figures</a>
+							<a class="dropdown-item" href="#forms">Forms</a>
+							<a class="dropdown-item" href="#image-thumbnails">Image Thumbnail</a>
+							<a class="dropdown-item" href="#jumbotron">Jumbotron</a>
+							<a class="dropdown-item" href="#list-group">List Group</a>
+							<a class="dropdown-item" href="#modals">Modals</a>
+							<a class="dropdown-item" href="#navs">Navs</a>
+							<a class="dropdown-item" href="#navbar">Navbar</a>
+							<a class="dropdown-item" href="#pagination">Pagination</a>
+							<a class="dropdown-item" href="#popovers">PopOvers</a>
+							<a class="dropdown-item" href="#progress-bars">Progress Bars</a>
+							<a class="dropdown-item" href="#tables">Tables</a>
+							<a class="dropdown-item" href="#tooltip">Tool Tip</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+				</ul>
+				<form class="d-flex">
+					<input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search" />
+				</form>
+			</div>
+		</div>
+	</nav>
+
+	<main class="container-fluid">
+		<section class="row mt-5 p-2 min-vh-100">
+			<div class="col">
+				<h1>Kickstart Bootstrap Journey</h1>
+				<p class="lead text-muted font-weight-lighter">
+					BootMe will help you to get started with Bootstrap quick and clean. There are many useful resources
+					available for this but we have specific goals.
+				</p>
+
+				<ul>
+					<li><strong>100% Bootstrap</strong> No additional HTML, CSS or Javascripts</li>
+					<li>
+						<strong>Clean Code</strong> with
+						<a
+							href="https://www.learnhowtoprogram.com/user-interfaces/building-layouts-preprocessors/7-1-sass-architecture">
+							SASS 7-1 Architecture</a>
+					</li>
+					<li>
+						<strong>Well Documented</strong> with Components Explorer powered by
+						<a href="https://storybook.js.org/"> Storybook</a>
+					</li>
+					<li><strong>Maintained with latest</strong> Bootstrap version</li>
+				</ul>
+
+				<p>
+					<a href="#" class="btn btn-primary my-2">Themes</a>
+					<a href="/storybook" class="btn btn-secondary my-2">Components</a>
+				</p>
+				<blockquote class="text-left text-uppercase">
+					Made with <i class="fas fa-heart"></i> by the students and volunteers of
+					<a href="www.techatpark.com">Tech@Park</a>
+				</blockquote>
+			</div>
+		</section>
+		<!-- Color System  -->
+		<section class="row mt-5 p-2 min-vh-100">
+			<div class="col">
+				<h2 class="border-bottom" id="color-system">
+					Color System<a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="" href="#color-system"
+						style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a>
+				</h2>
+
+				<div class="row mt-3 mb-5">
+					<div class="col-lg-6 col-md-6 border-right">
+						<h3>Theme colors</h3>
+						<div class="p-2 mb-2 bg-primary text-white">.bg-primary</div>
+						<div class="p-2 mb-2 bg-secondary text-white">.bg-secondary</div>
+						<div class="p-2 mb-2 bg-success text-white">.bg-success</div>
+						<div class="p-2 mb-2 bg-danger text-white">.bg-danger</div>
+						<div class="p-2 mb-2 bg-warning text-white">.bg-warning</div>
+						<div class="p-2 mb-2 bg-info text-white">.bg-info</div>
+						<div class="p-2 mb-2 bg-light text-gray-dark">.bg-light</div>
+						<div class="p-2 mb-2 bg-dark text-white">.bg-dark</div>
+						<div class="p-2 mb-2 bg-white text-gray-dark">.bg-white</div>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<h3>Gradient of grey</h3>
+						<div class="p-2 mb-2 swatch-100">.swatch-100</div>
+						<div class="p-2 mb-2 swatch-200">.swatch-200</div>
+						<div class="p-2 mb-2 swatch-300">.swatch-300</div>
+						<div class="p-2 mb-2 swatch-400">.swatch-400</div>
+						<div class="p-2 mb-2 swatch-500">.swatch-500</div>
+						<div class="p-2 mb-2 swatch-600">.swatch-600</div>
+						<div class="p-2 mb-2 swatch-700">.swatch-700</div>
+						<div class="p-2 mb-2 swatch-800">.swatch-800</div>
+						<div class="p-2 mb-2 swatch-900">.swatch-900</div>
+					</div>
 				</div>
 			</div>
-		</nav>
+		</section>
+		<!-- Typography  -->
+		<section class="row mt-5 p-2 min-vh-100">
+			<div class="col">
+				<h2 class="border-bottom" id="typography">
+					Typography<a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="" href="#typography"
+						style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a>
+				</h2>
 
-		<main class="container-fluid">
-			<section class="row mt-5 p-2 min-vh-100">
-				<div class="col">
-					<h1>Kickstart Bootstrap Journey</h1>
-					<p class="lead text-muted font-weight-lighter">
-						BootMe will help you to get started with Bootstrap quick and clean. There are many useful resources
-						available for this but we have specific goals.
+				<div>
+					<h1>Heading 1<small>Sub-heading</small></h1>
+					<h2>Heading 2<small>Sub-heading</small></h2>
+					<h3>Heading 3 <small>Sub-heading</small></h3>
+					<h4>Heading 4 <small>Sub-heading</small></h4>
+					<h5>Heading 5 <small>Sub-heading</small></h5>
+					<h6>Heading 6 <small>Sub-heading</small></h6>
+
+					<h1 class="display-1">Display 1</h1>
+					<h1 class="display-2">Display 2</h1>
+					<h1 class="display-3">Display 3</h1>
+					<h1 class="display-4">Display 4</h1>
+
+					<br />
+
+					<p class="lead">
+						This is the article lead — it stands out at the start of the article.
 					</p>
 
-					<ul>
-						<li><strong>100% Bootstrap</strong> No additional HTML, CSS or Javascripts</li>
-						<li>
-							<strong>Clean Code</strong> with
-							<a
-								href="https://www.learnhowtoprogram.com/user-interfaces/building-layouts-preprocessors/7-1-sass-architecture"
-							>
-								SASS 7-1 Architecture</a
-							>
-						</li>
-						<li>
-							<strong>Well Documented</strong> with Components Explorer powered by
-							<a href="https://storybook.js.org/"> Storybook</a>
-						</li>
-						<li><strong>Maintained with latest</strong> Bootstrap version</li>
-					</ul>
+					<p>This is normal text at the normal size etc... with a <a href="javascript://">Sample Link</a></p>
 
-					<p>
-						<a href="#" class="btn btn-primary my-2">Themes</a>
-						<a href="/storybook" class="btn btn-secondary my-2">Components</a>
-					</p>
-					<blockquote class="text-left text-uppercase">
-						Made with <i class="fas fa-heart"></i> by the students and volunteers of
-						<a href="www.techatpark.com">Tech@Park</a>
+					<p>Sample <mark>marked text</mark>with a <a href="javascript://">Sample Link</a></p>
+
+					<br />
+					<blockquote class="blockquote">
+						<p>
+							The most important moment of your life is now. The most important person in your life is the
+							one you are
+							with now, and the most important activity in your life is the one you are involved with now.
+							with a
+							<a href="javascript://">Sample Link</a>
+						</p>
 					</blockquote>
 				</div>
-			</section>
-			<section class="row mt-5 p-2 min-vh-100">
-				<div class="col">
-					<h2 class="border-bottom" id="color-system">
-						Color System<a
-							class="anchorjs-link"
-							aria-label="Anchor"
-							data-anchorjs-icon=""
-							href="#color-system"
-							style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"
-						></a>
-					</h2>
+			</div>
+		</section>
+		<!-- Grid  -->
+		<section class="row mt-5 p-2 min-vh-100">
+			<div class="col">
+				<h2 class="border-bottom" id="grid">
+					Grid<a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="" href="#grid"
+						style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a>
+				</h2>
+				<div class="row border">
+					<div class="col-sm-1 border-right">.col-sm-1</div>
+					<div class="col-sm-1 border-right">.col-sm-1</div>
+					<div class="col-sm-1 border-right">.col-sm-1</div>
+					<div class="col-sm-1 border-right">.col-sm-1</div>
+					<div class="col-sm-1 border-right">.col-sm-1</div>
+					<div class="col-sm-1 border-right">.col-sm-1</div>
+					<div class="col-sm-1 border-right">.col-sm-1</div>
+					<div class="col-sm-1 border-right">.col-sm-1</div>
+					<div class="col-sm-1 border-right">.col-sm-1</div>
+					<div class="col-sm-1 border-right">.col-sm-1</div>
+					<div class="col-sm-1 border-right">.col-sm-1</div>
+					<div class="col-sm-1 ">.col-sm-1</div>
+				</div>
+				<div class="row border">
+					<div class="col-sm-2 border-right">.col-sm-2</div>
+					<div class="col-sm-3 border-right">.col-sm-3</div>
+					<div class="col-sm-7 ">.col-sm-7</div>
+				</div>
+				<div class="row border">
+					<div class="col-sm-4 border-right">.col-sm-4</div>
+					<div class="col-sm-4 border-right">.col-sm-4</div>
+					<div class="col-sm-4 ">.col-sm-4</div>
+				</div>
+				<div class="row border">
+					<div class="col-sm-5 border-right">.col-sm-5</div>
+					<div class="col-sm-7 ">.col-sm-7</div>
+				</div>
+				<div class="row border">
+					<div class="col-sm-6 border-right">.col-sm-6</div>
+					<div class="col-sm-6 ">.col-sm-6</div>
+				</div>
+				<div class="row border">
+					<div class="col-sm-12">.col-sm-12</div>
+				</div>
+			</div>
+		</section>
+		<section class="row mt-5 p-2 min-vh-100">
+			<div class="col-12">
+				<h2 class="border-bottom" id="alerts">
+					Alert with Close<a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="" href="#alerts"
+						style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a>
+				</h2>
+			</div>
+			<div class="col mt-3 mb-5">
+				<h3>Default alert</h3>
+				<div class="alert alert-success" role="alert">Success alert with an example <a
+						href="javscript://">link</a> Give it a click if you like.</div>
+				<div class="alert alert-info" role="alert">Info alert</div>
+				<div class="alert alert-warning" role="alert">Warning alert</div>
+				<div class="alert alert-danger" role="alert">Danger alert</div>
+				<div class="alert alert-light" role="alert">Light alert</div>
+				<div class="alert alert-dark" role="alert">Dark alert</div>
+			</div>
+			<div class="col mt-3 mb-5">
+				<h3>Dismissible alert</h3>
+				<div class="alert alert-success alert-dismissible" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<strong>Congratulations!</strong> You successfully tied your shoelace!
+				</div>
+			</div>
 
-					<div class="row mt-3 mb-5">
-						<div class="col-lg-6 col-md-6 border-right">
-							<h3>Theme colors</h3>
-							<div class="p-2 mb-2 bg-primary text-white">.bg-primary</div>
-							<div class="p-2 mb-2 bg-secondary text-white">.bg-secondary</div>
-							<div class="p-2 mb-2 bg-success text-white">.bg-success</div>
-							<div class="p-2 mb-2 bg-danger text-white">.bg-danger</div>
-							<div class="p-2 mb-2 bg-warning text-white">.bg-warning</div>
-							<div class="p-2 mb-2 bg-info text-white">.bg-info</div>
-							<div class="p-2 mb-2 bg-light text-gray-dark">.bg-light</div>
-							<div class="p-2 mb-2 bg-dark text-white">.bg-dark</div>
-							<div class="p-2 mb-2 bg-white text-gray-dark">.bg-white</div>
+			<div class="col mt-3 mb-5">
+				<h3>Dismissible alert with fade</h3>
+				<div class="alert alert-success alert-dismissible fade show" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<strong>Congratulations!</strong> You successfully tied your shoelace!
+				</div>
+			</div>
+		</section>
+		<section class="min-vh-100">
+			<div class="row mt-1 p-2">
+				<div class="col">
+					<h2 class="border-bottom" id="badges">
+						Badges<a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="" href="#badges"
+							style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a>
+					</h2>
+				</div>
+			</div>
+			<div class="row mt-1 p-2">
+				<div class="col-6 mt-1 mb-5">
+					<h1>Example heading <span class="badge bg-secondary">New</span></h1>
+					<h2>Example heading <span class="badge bg-secondary">New</span></h2>
+					<h3>Example heading <span class="badge bg-secondary">New</span></h3>
+					<h4>Example heading <span class="badge bg-secondary">New</span></h4>
+					<h5>Example heading <span class="badge bg-secondary">New</span></h5>
+					<h6>Example heading <span class="badge bg-secondary">New</span></h6>
+				</div>
+				<div class="col-6 mt-1 mb-5">
+					<div class="row">
+						<div class="col mt-1 mb-5">
+							<h3>Button with inline badge</h3>
+							<button type="button" class="btn btn-primary">
+								Notifications
+								<span class="badge badge-light">4</span>
+							</button>
+							<button type="button" class="btn btn-primary">
+								Profile
+								<span class="badge badge-light">9</span>
+								<span class="sr-only">unread messages</span>
+							</button>
 						</div>
-						<div class="col-lg-6 col-md-6">
-							<h3>Gradient of grey</h3>
-							<div class="p-2 mb-2 swatch-100">.swatch-100</div>
-							<div class="p-2 mb-2 swatch-200">.swatch-200</div>
-							<div class="p-2 mb-2 swatch-300">.swatch-300</div>
-							<div class="p-2 mb-2 swatch-400">.swatch-400</div>
-							<div class="p-2 mb-2 swatch-500">.swatch-500</div>
-							<div class="p-2 mb-2 swatch-600">.swatch-600</div>
-							<div class="p-2 mb-2 swatch-700">.swatch-700</div>
-							<div class="p-2 mb-2 swatch-800">.swatch-800</div>
-							<div class="p-2 mb-2 swatch-900">.swatch-900</div>
+					</div>
+					<div class="row">
+						<div class="col mt-1 mb-5">
+							<h3>Default Badges and Pill Badges </h3>
+							<span class="badge bg-primary">Primary</span>
+							<span class="badge bg-secondary">Secondary</span>
+							<span class="badge bg-success">Success</span>
+							<span class="badge bg-danger">Danger</span>
+							<span class="badge rounded-pill bg-warning text-dark">Warning</span>
+							<span class="badge rounded-pill bg-info">Info</span>
+							<span class="badge rounded-pill bg-light text-dark">Light</span>
+							<span class="badge rounded-pill bg-dark">Dark</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col mt-1 mb-5">
+							<h3>Badges with link</h3>
+							<button type="button" class="btn btn-primary">
+								Notifications <span class="badge bg-secondary">4</span>
+							</button>
 						</div>
 					</div>
 				</div>
-			</section>
-			<section class="row mt-5 p-2 min-vh-100">
-				<div class="col">
-					<h2 class="border-bottom" id="typography">
-						Typography<a
-							class="anchorjs-link"
-							aria-label="Anchor"
-							data-anchorjs-icon=""
-							href="#typography"
-							style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"
-						></a>
-					</h2>
+			</div>
+		</section>
+		<section class="row mt-5 p-2 min-vh-100">
+			<div class="col"></div>
+		</section>
+		<section class="row mt-5 p-2 min-vh-100">
+			<div class="col"></div>
+		</section>
+		<section class="row mt-5 p-2 min-vh-100">
+			<div class="col"></div>
+		</section>
+		<section class="row mt-5 p-2 min-vh-100">
+			<div class="col"></div>
+		</section>
+		<section class="row mt-5 p-2 min-vh-100">
+			<div class="col"></div>
+		</section>
+		<section class="row mt-5 p-2 min-vh-100">
+			<div class="col"></div>
+		</section>
+		<section class="row mt-5 p-2 min-vh-100">
+			<div class="col"></div>
+		</section>
+		<section class="row mt-5 p-2 min-vh-100">
+			<div class="col"></div>
+		</section>
+		<section class="row mt-5 p-2 min-vh-100">
+			<div class="col"></div>
+		</section>
+		<section class="row mt-5 p-2 min-vh-100">
+			<div class="col"></div>
+		</section>
+		<section class="row mt-5 p-2 min-vh-100">
+			<div class="col"></div>
+		</section>
+		<section class="row mt-5 p-2 min-vh-100">
+			<div class="col"></div>
+		</section>
+		<section class="row mt-5 p-2 min-vh-100">
+			<div class="col"></div>
+		</section>
+		<section class="row mt-5 p-2 min-vh-100">
+			<div class="col"></div>
+		</section>
+	</main>
+	<!-- /.container -->
 
-					<div>
-						<h1>Heading 1<small>Sub-heading</small></h1>
-						<h2>Heading 2<small>Sub-heading</small></h2>
-						<h3>Heading 3 <small>Sub-heading</small></h3>
-						<h4>Heading 4 <small>Sub-heading</small></h4>
-						<h5>Heading 5 <small>Sub-heading</small></h5>
-						<h6>Heading 6 <small>Sub-heading</small></h6>
+	<!-- Optional JavaScript -->
+	<!-- Popper.js first, then Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+		integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+		crossorigin="anonymous"></script>
 
-						<h1 class="display-1">Display 1</h1>
-						<h1 class="display-2">Display 2</h1>
-						<h1 class="display-3">Display 3</h1>
-						<h1 class="display-4">Display 4</h1>
+	<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+	<script>
+		anchors.add('.container-fluid>h2');
+		var theme;
+		var sPageURL = window.location.search.substring(1);
+		var sURLVariables = sPageURL.split('&');
+		for (var i = 0; i < sURLVariables.length; i++) {
+			var sParameterName = sURLVariables[i].split('=');
+			if (sParameterName[0] == 'theme') {
+				console.log(sParameterName[1]);
+				//or this is similar
+				var elements = document.querySelectorAll('link[rel=stylesheet]');
 
-						<br />
+				elements[0].parentNode.removeChild(elements[i]);
 
-						<p class="lead">
-							This is the article lead — it stands out at the start of the article.
-						</p>
+				var head = document.head;
+				var link = document.createElement('link');
 
-						<p>This is normal text at the normal size etc... with a <a href="javascript://">Sample Link</a></p>
-
-						<p>Sample <mark>marked text</mark>with a <a href="javascript://">Sample Link</a></p>
-
-						<br />
-						<blockquote class="blockquote">
-							<p>
-								The most important moment of your life is now. The most important person in your life is the one you are
-								with now, and the most important activity in your life is the one you are involved with now. with a
-								<a href="javascript://">Sample Link</a>
-							</p>
-						</blockquote>
-					</div>
-				</div>
-			</section>
-			<section class="row mt-5 p-2 min-vh-100">
-				<div class="col"></div>
-			</section>
-			<section class="row mt-5 p-2 min-vh-100">
-				<div class="col"></div>
-			</section>
-			<section class="row mt-5 p-2 min-vh-100">
-				<div class="col"></div>
-			</section>
-			<section class="row mt-5 p-2 min-vh-100">
-				<div class="col"></div>
-			</section>
-			<section class="row mt-5 p-2 min-vh-100">
-				<div class="col"></div>
-			</section>
-			<section class="row mt-5 p-2 min-vh-100">
-				<div class="col"></div>
-			</section>
-			<section class="row mt-5 p-2 min-vh-100">
-				<div class="col"></div>
-			</section>
-			<section class="row mt-5 p-2 min-vh-100">
-				<div class="col"></div>
-			</section>
-			<section class="row mt-5 p-2 min-vh-100">
-				<div class="col"></div>
-			</section>
-			<section class="row mt-5 p-2 min-vh-100">
-				<div class="col"></div>
-			</section>
-			<section class="row mt-5 p-2 min-vh-100">
-				<div class="col"></div>
-			</section>
-			<section class="row mt-5 p-2 min-vh-100">
-				<div class="col"></div>
-			</section>
-			<section class="row mt-5 p-2 min-vh-100">
-				<div class="col"></div>
-			</section>
-			<section class="row mt-5 p-2 min-vh-100">
-				<div class="col"></div>
-			</section>
-			<section class="row mt-5 p-2 min-vh-100">
-				<div class="col"></div>
-			</section>
-			<section class="row mt-5 p-2 min-vh-100">
-				<div class="col"></div>
-			</section>
-			<section class="row mt-5 p-2 min-vh-100">
-				<div class="col"></div>
-			</section>
-		</main>
-		<!-- /.container -->
-
-		<!-- Optional JavaScript -->
-		<!-- Popper.js first, then Bootstrap JS -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-			integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-			crossorigin="anonymous"
-		></script>
-
-		<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
-		<script>
-			anchors.add('.container-fluid>h2');
-			var theme;
-			var sPageURL = window.location.search.substring(1);
-			var sURLVariables = sPageURL.split('&');
-			for (var i = 0; i < sURLVariables.length; i++) {
-				var sParameterName = sURLVariables[i].split('=');
-				if (sParameterName[0] == 'theme') {
-					console.log(sParameterName[1]);
-					//or this is similar
-					var elements = document.querySelectorAll('link[rel=stylesheet]');
-
-					elements[0].parentNode.removeChild(elements[i]);
-
-					var head = document.head;
-					var link = document.createElement('link');
-
-					link.type = 'text/css';
-					link.rel = 'stylesheet';
-					link.href = '/css/' + sParameterName[1] + '/style.css';
-					head.appendChild(link);
-					break;
-				}
+				link.type = 'text/css';
+				link.rel = 'stylesheet';
+				link.href = '/css/' + sParameterName[1] + '/style.css';
+				head.appendChild(link);
+				break;
 			}
-		</script>
-	</body>
+		}
+	</script>
+</body>
+
 </html>
