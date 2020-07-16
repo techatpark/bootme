@@ -54,35 +54,48 @@
 							<a class="dropdown-item" href="#grid">Grid</a>
 						</div>
 					</li>
+
+
 					<li class="nav-item active dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Components
+							Content
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#alerts">Indicators</a>
-							<a class="dropdown-item" href="#badges"></a>
-							<a class="dropdown-item" href="#breadcrumbs">Breadcrumbs</a>
+							<a class="dropdown-item" href="#alerts">Alerts</a>
+							<a class="dropdown-item" href="#badges">Badges</a>
 							<a class="dropdown-item" href="#buttons">Buttons</a>
-							<a class="dropdown-item" href="#cards">Cards</a>
-							<a class="dropdown-item" href="#carousel">Carousel</a>
-							<a class="dropdown-item" href="#alerts">Close</a>
-							<a class="dropdown-item" href="#dropdown">Drop Down</a>
-							<a class="dropdown-item" href="#figures">Figures</a>
-							<a class="dropdown-item" href="#forms">Forms</a>
-							<a class="dropdown-item" href="#image-thumbnails">Image Thumbnail</a>
-							<a class="dropdown-item" href="#list-group">List Group</a>
 							<a class="dropdown-item" href="#modals">Modals</a>
-							<a class="dropdown-item" href="#navs">Navs</a>
-							<a class="dropdown-item" href="#navbars">Navbar</a>
-							<a class="dropdown-item" href="#pagination">Pagination</a>
-							<a class="dropdown-item" href="#popovers">PopOvers</a>
-							<a class="dropdown-item" href="#progress-bars">Progress Bars</a>
+							<a class="dropdown-item" href="#popovers">Popovers</a>
 							<a class="dropdown-item" href="#tables">Tables</a>
-							<a class="dropdown-item" href="#tooltip">ToolTip</a>
-							<a class="dropdown-item" href="#toast">Toast</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Something else here</a>
+							<a class="dropdown-item" href="#toasts">Toasts</a>
+							<a class="dropdown-item" href="#tooltip">Tooltip</a>
+						</div>
+					</li>
+
+					<li class="nav-item active dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Navigation
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#breadcrumbs">Breadcrumbs</a>
+							<a class="dropdown-item" href="#dropdowns">Dropdowns</a>
+							<a class="dropdown-item" href="#navs">Navs</a>
+							<a class="dropdown-item" href="#navbars">Navbars</a>
+							<a class="dropdown-item" href="#paginations">Pagination</a>
+						</div>
+					</li>
+
+					<li class="nav-item active dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Forms
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#progress">Progress</a>
+							<a class="dropdown-item" href="#listgroups">Listgroups</a>
+							<a class="dropdown-item" href="#cards">Cards</a>
 						</div>
 					</li>
 				</ul>
@@ -325,22 +338,24 @@
 			<div class="row mt-2">
 				<div class="col-8 border">col-1</div>
 				<div class="col-4 border">col-2</div>
-			  </div>
+			</div>
 		</section>
 
 		<!-- Indicators => Alerts, Badges  -->
 		<section class="min-vh-100">
 			<div class="row mt-5 p-2">
 				<div class="col-12">
-					<h1 id="alerts">
-						Indicators<a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="" href="#alerts"
-							style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a>
+					<h1>
+						Indicators
 					</h1>
 				</div>
 			</div>
 			<div class="row mt-2 p-2">
 				<div class="col-12">
-					<h2>Alerts</h2>
+					<h2 id="alerts">Alerts <a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon=""
+							href="#alerts" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a>
+
+					</h2>
 				</div>
 			</div>
 			<div class="row mt-0 p-2">
@@ -405,9 +420,11 @@
 					</div>
 				</div>
 			</div>
+			<!-- Badges -->
 			<div class="row mt-2 p-2">
 				<div class="col-12">
-					<h2>Badges</h2>
+					<h2 id="badges">Badges<a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon=""
+							href="#badges" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
 				</div>
 			</div>
 			<div class="row mt-2 p-2">
@@ -436,6 +453,271 @@
 			</div>
 		</section>
 
+		<!-- Dropdowns  -->
+		<section class="min-vh-100">
+			<div class="row mt-5 p-2">
+				<div class="col">
+					<h1 id="dropdowns">
+						Dropdowns<a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="" href="#dropdowns"
+							style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a>
+					</h1>
+				</div>
+			</div>
+			<div class="row mt-2 p-2">
+
+				<div class="col btn-group">
+					<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+						aria-expanded="false">
+						Action
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item" href="#">Separated link</a></li>
+					</ul>
+				</div>
+				<div class="col btn-group">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+						aria-expanded="false">
+						Action
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item" href="#">Separated link</a></li>
+					</ul>
+				</div>
+				<div class="col btn-group">
+					<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"
+						aria-expanded="false">
+						Action
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item" href="#">Separated link</a></li>
+					</ul>
+				</div>
+				<div class="col btn-group">
+					<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"
+						aria-expanded="false">
+						Action
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item" href="#">Separated link</a></li>
+					</ul>
+				</div>
+				<div class="col btn-group">
+					<button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"
+						aria-expanded="false">
+						Action
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item" href="#">Separated link</a></li>
+					</ul>
+				</div>
+				<div class="col btn-group">
+					<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"
+						aria-expanded="false">
+						Action
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item" href="#">Separated link</a></li>
+					</ul>
+				</div>
+				<div class="col btn-group">
+					<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown"
+						aria-expanded="false">
+						Action
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item" href="#">Separated link</a></li>
+					</ul>
+				</div>
+				<div class="col btn-group">
+					<button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown"
+						aria-expanded="false">
+						Action
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item" href="#">Separated link</a></li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="row mt-2 p-2">
+				<div class="col btn-group">
+					<button type="button" class="btn btn-primary">Action</button>
+					<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+						data-toggle="dropdown" aria-expanded="false">
+						<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item" href="#">Separated link</a></li>
+					</ul>
+				</div>
+				<div class="col btn-group">
+					<button type="button" class="btn btn-secondary">Action</button>
+					<button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+						data-toggle="dropdown" aria-expanded="false">
+						<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item" href="#">Separated link</a></li>
+					</ul>
+				</div>
+				<div class="col btn-group">
+					<button type="button" class="btn btn-success">Action</button>
+					<button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split"
+						data-toggle="dropdown" aria-expanded="false">
+						<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item" href="#">Separated link</a></li>
+					</ul>
+				</div>
+				<div class="col btn-group">
+					<button type="button" class="btn btn-danger">Action</button>
+					<button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+						data-toggle="dropdown" aria-expanded="false">
+						<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item" href="#">Separated link</a></li>
+					</ul>
+				</div>
+				<div class="col btn-group">
+					<button type="button" class="btn btn-warning">Action</button>
+					<button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split"
+						data-toggle="dropdown" aria-expanded="false">
+						<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item" href="#">Separated link</a></li>
+					</ul>
+				</div>
+				<div class="col btn-group">
+					<button type="button" class="btn btn-info">Action</button>
+					<button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split"
+						data-toggle="dropdown" aria-expanded="false">
+						<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item" href="#">Separated link</a></li>
+					</ul>
+				</div>
+				<div class="col btn-group">
+					<button type="button" class="btn btn-light">Action</button>
+					<button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split"
+						data-toggle="dropdown" aria-expanded="false">
+						<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item" href="#">Separated link</a></li>
+					</ul>
+				</div>
+				<div class="col btn-group">
+					<button type="button" class="btn btn-dark">Action</button>
+					<button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split"
+						data-toggle="dropdown" aria-expanded="false">
+						<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item" href="#">Separated link</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
 		<!-- Buttons  -->
 		<section class="min-vh-100">
 			<div class="row mt-5 p-2">
@@ -996,7 +1278,10 @@
 			</div>
 			<div class="row mt-2 p-2">
 				<div class="col-6">
-					<h2>Breadcrumbs</h2>
+					<h2 id="breadcrumbs">Breadcrumbs <a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon=""
+							href="#breadcrumbs" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a>
+
+					</h2>
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item active">Home</li>
 					</ol>
@@ -1011,7 +1296,10 @@
 					</ol>
 				</div>
 				<div class="col-6">
-					<h2>Pagination</h2>
+					<h2 id="paginations">Pagination  <a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon=""
+						href="#paginations" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a>
+
+					</h2>
 					<div>
 						<ul class="pagination">
 							<li class="page-item disabled">
@@ -1481,7 +1769,10 @@
 			</div>
 			<div class="row mt-2 p-2">
 				<div class="col-6">
-					<h2>Modals</h2>
+					<h2 id="modals">Modals <a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon=""
+							href="#modals" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a>
+
+					</h2>
 					<div class="modal" tabindex="-1" style="position: static; display: block;">
 						<div class="modal-dialog">
 							<div class="modal-content">
@@ -1505,7 +1796,11 @@
 				<div class="col-6">
 					<div class="row mb-3">
 						<div class="col">
-							<h2>Popovers</h2>
+							<h2 id="popovers">Popovers <a class="anchorjs-link" aria-label="Anchor"
+									data-anchorjs-icon="" href="#popovers"
+									style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a>
+
+							</h2>
 							<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
 								data-placement="left"
 								data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
@@ -1535,7 +1830,11 @@ sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="Popover 
 					</div>
 					<div class="row mb-3">
 						<div class="col">
-							<h2>Tooltips</h2>
+							<h2 id="tooltips">Tooltips <a class="anchorjs-link" aria-label="Anchor"
+									data-anchorjs-icon="" href="#tooltips"
+									style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a>
+
+							</h2>
 							<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top"
 								title="Tooltip on top">
 								Tooltip on top
@@ -1556,7 +1855,10 @@ sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="Popover 
 					</div>
 					<div class="row mb-3">
 						<div class="col">
-							<h2>Toasts</h2>
+							<h2 id="toasts">Toasts <a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon=""
+									href="#toasts" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a>
+
+							</h2>
 							<div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
 								<div class="toast-header">
 									<strong class="mr-auto">Bootstrap</strong>
