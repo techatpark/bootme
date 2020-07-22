@@ -1,14 +1,18 @@
+// Lumen 4.5.0
+// Bootswatch
+
 //
 // Color system
 //
 
-$primary:       $gray-800 !default;
-$secondary:     $gray-700 !default;
+
+$primary:       $blue !default;
+$secondary:     $gray-200 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $white !default;
+$light:         $gray-100 !default;
 $dark:          $gray-700 !default;
 
 $yiq-contrasted-threshold: 200 !default;
