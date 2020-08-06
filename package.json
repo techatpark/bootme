@@ -16,7 +16,7 @@
     "build-storybook": "build-storybook -o dist/storybook",
     "generate-addon-jest-testresults": "jest --config=tests/addon-jest.config.json --json --outputFile=stories/addon-jest.testresults.json",
     "watch:scss": "onchange \"src/scss\" -- run-s sass",
-    "watch:html": "onchange \"src/index.html\" -- run-s copy",
+    "watch:html": "onchange \"src/*.html\" -- run-s copy",
     "watch:images": "onchange \"src/images\" -- run-s copy",
     "storybook": "start-storybook -s ./dist/storybook -p 9006",
     "start": "run-p build storybook watch:* serve",
