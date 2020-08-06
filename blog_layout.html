@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+			integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+			integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+			crossorigin="anonymous"
+		/>
+		<style>
+			:target::before {
+				content: '';
+				display: block;
+				margin-top: -80px;
+				height: 80px;
+				width: 1px;
+			}
+		</style>
+
+		<title>BootMe - Blog Layout</title>
+	</head>
+
+	<body>
+		Hello Layout 2
+
+		<!-- Optional JavaScript -->
+		<!-- Popper.js first, then Bootstrap JS -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+			integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+		<script>
+			anchors.add('.container-fluid>h2');
+			var theme;
+			var sPageURL = window.location.search.substring(1);
+			var sURLVariables = sPageURL.split('&');
+			for (var i = 0; i < sURLVariables.length; i++) {
+				var sParameterName = sURLVariables[i].split('=');
+				if (sParameterName[0] == 'theme') {
+					console.log(sParameterName[1]);
+					//or this is similar
+					var elements = document.querySelectorAll('link[rel=stylesheet]');
+
+					elements[0].parentNode.removeChild(elements[i]);
+
+					var head = document.head;
+					var link = document.createElement('link');
+
+					link.type = 'text/css';
+					link.rel = 'stylesheet';
+					link.href = '/css/' + sParameterName[1] + '/style.css';
+					head.appendChild(link);
+					break;
+				}
+			}
+
+			var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="popover"]'));
+			var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+				return new bootstrap.Popover(popoverTriggerEl);
+			});
+
+			var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'));
+			var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+				return new bootstrap.Tooltip(tooltipTriggerEl);
+			});
+
+			function themeExplorer() {
+				document.querySelector('body>div.container-fluid').classList.remove('d-none');
+				document.querySelector('body>main.container-fluid').classList.add('d-none');
+				document.querySelector('body>nav').classList.add('d-none');
+			}
+
+			function closeExplorer() {
+				document.querySelector('body>div.container-fluid').classList.add('d-none');
+				document.querySelector('body>main.container-fluid').classList.remove('d-none');
+				document.querySelector('body>nav').classList.remove('d-none');
+			}
+
+			document.getElementById('themes').onclick = themeExplorer;
+		</script>
+	</body>
+</html>
