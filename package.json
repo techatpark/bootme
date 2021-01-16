@@ -41,7 +41,7 @@
     "@storybook/html": "v6.0.16",
     "@storybook/source-loader": "v6.0.16",
     "bootstrap": "5.0.0-alpha1",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.13",
     "copy-files-from-to": "^2.1.0",
     "eventemitter3": "^4.0.0",
     "format-json": "^1.0.3",
