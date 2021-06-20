@@ -1,16 +1,8 @@
 {
   "copyFiles": [
     {
-      "from": "src/images/**",
-      "to": "dist/images"
-    },
-    {
       "from": "src/*.html",
       "to": "dist"
-    },
-    {
-      "from": "src/layout/*.html",
-      "to": "dist/layout"
     },
     {
       "from": "CNAME",
