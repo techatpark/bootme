@@ -13,7 +13,7 @@
     "sass-theme": "sass \"src/scss/$npm_config_first:dist/css/$npm_config_first\"",
     "sass": "sass src/scss:dist/css",
     "build": "run-s copy sass",
-    "watch:scss": "onchange \"src/scss\" -- npm run sass-theme --first='{{file.toString().replace(`src/scss/`,``).split(`/`)[0]}}'",
+    "watch:scss": "onchange \"src/scss\" -- npm run sass-theme --first='gurukulam'",
     "watch:html": "onchange \"src/**/*.html\" -- run-s copy",
     "start": "npm run build && run-p serve watch:*",
     "postinstall": "run-s build"
